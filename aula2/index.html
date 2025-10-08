@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - DOM e Eventos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="main-container">
+        <header>
+            <h1 id="titulo-principal">Capacitação Interativa de JS</h1>
+        </header>
+
+        <div class="card1">
+            <button id="btn-scroll-bottom" style="background-color: #0d6efd;">Ir para o fim da página</button>
+        </div>
+        
+        <div class="card">
+            <h2>1. Manipulando Texto (.textContent)</h2>
+            <p id="paragrafo-mudar">Clique no botão para mudar o texto deste parágrafo.</p>
+            <button id="btn-mudar-texto">Mudar Texto</button>
+        </div>
+
+        <div class="card">
+            <h2>2. Lendo Valor de um Input (.value)</h2>
+            <p id="paragrafo-saudacao">Digite seu nome e clique em "Saudação".</p>
+            <input type="text" id="input-nome" placeholder="Seu nome aqui">
+            <button id="btn-saudacao">Saudação</button>
+        </div>
+
+        <div class="card">
+            <h2>3. Alternando Classes (.classList.toggle)</h2>
+            <p>Clique para ativar ou desativar o estilo "ativo" do botão.</p>
+            <button id="btn-alternar-classe">Ativar Estilo</button>
+        </div>
+
+        <div class="card">
+            <h2>4. Modificando Atributos (.setAttribute)</h2>
+            <p>Clique no botão para trocar a imagem abaixo.</p>
+            <button id="btn-trocar-imagem">Trocar Imagem</button>
+            <img id="imagem-exemplo" src="https://placehold.co/400x400/0d6efd/white?text=JS" alt="Logo do JavaScript">
+        </div>
+
+        <div class="card">
+            <h2>6. Manipulando Múltiplos Elementos (querySelectorAll)</h2>
+            <p>Clique no botão para destacar todas as tecnologias de uma só vez.</p>
+            <div class="tech-tag-container">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">DOM</span>
+            </div>
+            <button id="btn-highlight-all">Destacar Todos</button>
+            <button id="btn-clear-highlight" style="background-color: #6c757d;">Limpar Destaque</button>
+        </div>
+        
+        <div class="card" id="card-final">
+            <h2>5. Controlando a Rolagem da Página</h2>
+            <p>Use o botão para retornar ao topo da página.</p>
+            <button id="btn-scroll-top" style="background-color: #0d6efd;">Voltar ao topo</button>
+        </div>
+    </main>
+</body>
+</html>
